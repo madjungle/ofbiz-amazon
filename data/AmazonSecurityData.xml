@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the Amazon Component." permissionId="amazon_VIEW"/>
+    <SecurityPermission description="Create operations in the Amazon Component." permissionId="amazon_CREATE"/>
+    <SecurityPermission description="Update operations in the Amazon Component." permissionId="amazon_UPDATE"/>
+    <SecurityPermission description="Delete operations in the Amazon Component." permissionId="amazon_DELETE"/>
+    <SecurityPermission description="ALL operations in the Amazon Component." permissionId="amazon_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="amazon_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="amazon_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="amazon_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="amazon_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="amazon_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="amazon_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="amazon_ADMIN"/>
+</entity-engine-xml>
