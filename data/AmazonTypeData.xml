@@ -22,7 +22,8 @@ under the License.
 
 
     <WebSite webSiteId="AMAZON" siteName="Amazon Application" visualThemeSetId="BACKOFFICE"/>
-    
+
+<!--    
     <GoodIdentificationType description="Amazon Id" goodIdentificationTypeId="AMAZON_ID" hasTable="N" parentTypeId=""/>
     <GoodIdentificationType description="Amazon Id en_US" goodIdentificationTypeId="AMAZON_ID_en_US" hasTable="N"/>
     <GoodIdentificationType description="Amazon Id en_GB" goodIdentificationTypeId="AMAZON_ID_en_GB" hasTable="N"/>
@@ -30,4 +31,5 @@ under the License.
     <GoodIdentificationType description="Amazon Id de" goodIdentificationTypeId="AMAZON_ID_de" hasTable="N"/>
     <GoodIdentificationType description="Amazon Id fr" goodIdentificationTypeId="AMAZON_ID_fr" hasTable="N"/>
     <GoodIdentificationType description="Amazon Id jp" goodIdentificationTypeId="AMAZON_ID_jp" hasTable="N"/>
+-->
 </entity-engine-xml>
