@@ -47,12 +47,13 @@ under the License.
         <field name="endpointUrl" type="value"><description>Amazon endpoint URL</description></field>
         <field name="webSiteId" type="id-ne"></field>
         <prim-key field="productStoreId"/>      
-        <relation type="one" fk-name="AMAZON_STORE" rel-entity-name="ProductStore">
+ <!--       <relation type="one" fk-name="AMAZON_STORE" rel-entity-name="ProductStore">
             <key-map field-name="productStoreId"/>
         </relation>
         <relation type="one" fk-name="AMAZON_WEBSITE" rel-entity-name="WebSite">
             <key-map field-name="webSiteId"/>
         </relation>
+        -->
     </entity>
     
     <entity entity-name="AmazonProductListing" package-name="org.ofbiz.amazon" title="Amazon Product Listing">
@@ -65,6 +66,7 @@ under the License.
         <field name="endDateTime" type="date-time"/>
         <field name="autoRelisting" type="indicator"/>
         <prim-key field="productListingId"/>
+<!--          
         <relation type="one" fk-name="AMAZON_PRODUCT" rel-entity-name="Product">
             <key-map field-name="productId"/>
         </relation>
@@ -74,5 +76,6 @@ under the License.
         <relation type="one" fk-name="AMAZON_STATUS" rel-entity-name="StatusItem">
             <key-map field-name="statusId"/>
         </relation>
+        -->
     </entity>
 </entitymodel>
