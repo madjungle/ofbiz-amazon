@@ -38,9 +38,7 @@ under the License.
     <!-- org.ofbiz.amazon.config -->
     <!-- ========================================================= -->
 
-    <entity entity-name="Amazon"
-            package-name="org.ofbiz.amazon"
-            title="Amazon">
+    <entity entity-name="Amazon Config" package-name="org.ofbiz.amazon" title="Amazon Config">
         <field name="productStoreId" type="id-ne"></field>
         <field name="merchantId" type="value"><description>Merchant ID for Amazon</description></field>
         <field name="marketplaceId" type="value"><description>Market Place ID for Amazon</description></field>
@@ -48,13 +46,34 @@ under the License.
         <field name="accessKey" type="value" encrypt="true"><description>Developer Key that should be obtained from Amazon</description></field>
         <field name="endpointUrl" type="value"><description>Amazon endpoint URL</description></field>
         <field name="webSiteId" type="id-ne"></field>
-        <field name="productId" type="id-ne"></field>
         <prim-key field="productStoreId"/>      
         <relation type="one" fk-name="GBS_PROD_STORE" rel-entity-name="ProductStore">
             <key-map field-name="productStoreId"/>
         </relation>
         <relation type="one" fk-name="GBS_WEBSITE" rel-entity-name="WebSite">
             <key-map field-name="webSiteId"/>
+        </relation>
+    </entity>
+    
+    
+    <entity entity-name="AmazonProductListing" package-name="org.ofbiz.amazon" title="Amazon Product Listing">
+        <field name="productListingId" type="id-ne"/>
+        <field name="itemId" type="id-long"/>
+        <field name="productStoreId" type="id-ne"/>
+        <field name="productId" type="id-ne"/>
+        <field name="statusId" type="id-ne"/>
+        <field name="startDateTime" type="date-time"/>
+        <field name="endDateTime" type="date-time"/>
+        <field name="autoRelisting" type="indicator"/>
+        <prim-key field="productListingId"/>
+        <relation type="one" fk-name="AMAZON_PRODUCT" rel-entity-name="Product">
+            <key-map field-name="productId"/>
+        </relation>
+        <relation type="one" fk-name="AMAZON_STORE" rel-entity-name="ProductStore">
+            <key-map field-name="productStoreId"/>
+        </relation>
+        <relation type="one" fk-name="AMAZON_STATUS" rel-entity-name="StatusItem">
+            <key-map field-name="statusId"/>
         </relation>
     </entity>
 </entitymodel>    
