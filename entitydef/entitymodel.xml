@@ -48,7 +48,7 @@ under the License.
         <field name="accessKey" type="value" encrypt="true"><description>Developer Key that should be obtained from Amazon</description></field>
         <field name="endpointUrl" type="value"><description>Amazon endpoint URL</description></field>
         <field name="webSiteId" type="id-ne"></field>
-
+        <field name="productId" type="id-ne"></field>
         <prim-key field="productStoreId"/>      
         <relation type="one" fk-name="GBS_PROD_STORE" rel-entity-name="ProductStore">
             <key-map field-name="productStoreId"/>
