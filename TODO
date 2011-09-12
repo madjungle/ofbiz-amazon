@@ -1,0 +1,32 @@
+TODO
+====
+
+* Java
+	* Authenticate with Amazon
+	* Validate XSD
+
+
+* Services
+	* Import SKUs listed on Amazon
+	* Export prices for SKU listed on Amazon
+	* Export stock levels for SKU listed on Amazon
+	* Daily job to run all three in sequence
+
+* Screens
+	* Screen to save Amazon login data
+
+Import SKU
+----------
+* https://images-na.ssl-images-amazon.com/images/G/01/rainier/help/xsd/release_1_9/Product.xsd - maybe?
+
+
+Stock Levels
+------------
+* https://images-na.ssl-images-amazon.com/images/G/01/rainier/help/xsd/release_1_9/Inventory.xsd
+* SKU, Available, Quantity, RestockDate, FulfillmentLatency
+
+
+Export Prices
+-------------
+* https://images-na.ssl-images-amazon.com/images/G/01/rainier/help/xsd/release_1_9/Price.xsd
+* SKU, StandardPrice, Sale
